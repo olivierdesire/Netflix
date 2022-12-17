@@ -1,11 +1,12 @@
-const Section = (element) => {
+const Section = ({ element }) => {
+  //   console.log(element);
   return (
-    <section key={element.index}>
+    <section>
       <h1>{element.category}</h1>
       <div>
-        {element.images.map((element, index) => {
-          // console.log(element);
-          return <img key={index} src={element} alt={element} />;
+        {element.images.map((url, index) => {
+          console.log(url);
+          return <img key={index} src={url} alt="snapshot" />;
         })}
       </div>
     </section>

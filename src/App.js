@@ -14,18 +14,7 @@ function App() {
         </header>
         {tabMovies.map((element, index) => {
           // console.log(element.category);
-          return (
-            <Section key={index} />
-            // <section key={index}>
-            //   <h1>{element.category}</h1>
-            //   <div>
-            //     {element.images.map((element, index) => {
-            //       // console.log(element);
-            //       return <img key={index} src={element} alt={element} />;
-            //     })}
-            //   </div>
-            // </section>
-          );
+          return <Section key={index} element={element} />;
         })}
       </main>
     </div>

@@ -1,6 +1,7 @@
 main {
   background-color: black;
-  max-width: 1500px;
+  max-width: 1980px;
+  padding-bottom: 50px;
 }
 
 header img {
@@ -32,6 +33,7 @@ section > div {
 
 section img {
   width: 220px;
+  object-fit: cover;
 }
 
 section > div::-webkit-scrollbar {
