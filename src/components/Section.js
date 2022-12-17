@@ -1,9 +1,9 @@
-const Section = (props) => {
+const Section = (element) => {
   return (
-    <section key={index}>
+    <section key={element.index}>
       <h1>{element.category}</h1>
       <div>
-        {tabMovies[index].images.map((element, index) => {
+        {element.images.map((element, index) => {
           // console.log(element);
           return <img key={index} src={element} alt={element} />;
         })}
